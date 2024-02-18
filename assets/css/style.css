@@ -53,7 +53,7 @@ header img{
     width: 100%;
     height: auto;
     opacity: 80%;
-    border-bottom: 3vh solid lightcyan;
+    border-bottom: .25vh solid var(--tcolor);
 }
 
 
@@ -148,10 +148,22 @@ header img{
     opacity: 55%;
 }
 
+.navbar0:hover {
+    color: var(--tcolor);
+}
+
+.navbar1:hover {
+    color: var(--tcolor);
+}
+
+.navbar2:hover {
+    color: var(--tcolor);
+}
+
 /* body content */
 
 body {
-    background-color: #d9dcd6;
+    background-color: lightgray;
     display: flex;
     flex-direction: column; /* Arrange rows vertically */
     align-items: center; /* Center content horizontally */
@@ -175,6 +187,7 @@ body {
 
 .about-sidebar, .work-sidebar, .contact-sidebar {
     flex-basis: 20%; /* Set sidebar width */
+    text-shadow: var(--tcolor) .25vw .25vw;
 }
 
 .about-text, .work, .contact-elements {
@@ -186,16 +199,16 @@ body {
 .about-sidebar {
     font-family: 'PermanentMarker-Regular';
     font-size: 5vw;
+    color: var(--scolor);
+    opacity: 50%;
     z-index: 1;
     transform: rotate(-20deg);
-    margin: 0;
+    margin-top: 5vh;
     padding: 0;
-    background-color: white;
 }
 
 .about-text {
     display: inline-block;
-    background-color: white;
     font-family: 'Oswald';
     font-size: 1.5vw;
 }
@@ -212,10 +225,11 @@ body {
     max-width: 20vw;
     font-family: 'PermanentMarker-Regular';
     font-size: 5vw;
+    color: var(--pcolor);
+    opacity: 50%;
     z-index: 1;
     margin-right: 5vw;
     transform: rotate(-20deg);
-    background-color: white;
 }
 
 .work-main {
@@ -254,13 +268,19 @@ figcaption {
     z-index: 1;
     font-family: 'Oswald';
     font-size: 1.25vw;
+    position: relative;
+}
 
+.work img:hover {
+    filter: hue-rotate(-117deg) brightness(115%);
 }
 
 .contact-sidebar {
     max-width: 20vw;
     font-family: 'PermanentMarker-Regular';
     font-size: 5vw;
+    color: var(--scolor);
+    opacity: 50%;
     z-index: 1;
     transform: rotate(-20deg);
 }
@@ -275,11 +295,25 @@ figcaption {
 
 .contact-navbar li{
     font-family: 'PermanentMarker-Regular';
-    font-size: 5vw;
+    font-size: 4.5vw;
+    opacity: 60%;
+    color: var(--pcolor);
+    text-shadow: var(--tcolor) .25vw .25vw;
     flex-grow: 1;
     width: 55%;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+}
+
+.contact-navbar li:hover {
+    color: var(--scolor);
+}
+
+footer {
+    font-family: 'Oswald';
+    font-size: 1.5vw;
+    color: darkgray;
+    margin-bottom: 2vh;
 }
 
 @media screen and (min-width: 768px) {
