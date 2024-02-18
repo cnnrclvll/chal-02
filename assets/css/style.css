@@ -163,7 +163,6 @@ header img{
 /* body content */
 
 body {
-    background-color: lightgray;
     display: flex;
     flex-direction: column; /* Arrange rows vertically */
     align-items: center; /* Center content horizontally */
